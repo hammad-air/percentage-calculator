@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+    <title>Grade scale</title>
+</head>
+<body>
+
+
+	 
+	<div class="main">
+	<center style="margin-top: 200px;">
+    <h1>Grade Scale</h1>
+<br>
+<div class="input-group mb-3">
+	<input type="text" placeholder="  Enter your Number" style=" left: 50%; right:50%;  width: 400px; margin-left: 450px;" id="input" required >
+	<b><button class="btn btn-outline-danger" onclick="Gradescale()"  type="button" id="button-addon2">Click Here For Result</button></b>
+  </div>
+<center>
+  <div class="result">
+	  <span id="result"></span>
+  </div>
+</center>	
+    <span id ="output" class="results"></span>
+    </body>
+</center>
+</div>
+
+index.html
+
+
+<script>
+    function Gradescale()
+    {
+		let Grade= document.getElementById('input').Value;
+		let result= document.getElementById('output');
+
+       if (Grade => 80 && Grade <= 100)
+       {
+		   result. innerHTML = "You got an 'A-1'. Excellent";
+		}
+		else if(Grade => 70 && Grade <= 79)
+       {
+		   result.innerHTML = "You got a 'A' .great ";   
+		}
+		else if (Grade => 60 && Grade <= 69)
+		{
+			result.innerHTML = "You got a 'B' . good ";
+		}
+		else if (Grade => 60 && Grade<=55)
+		{
+			result.innerHTML = "you got a 'C' . you have to work hard ";
+		}	else if (Grade => 55 && Grade <= 50)
+		{
+			result.innerHTML = "you got a 'D' . you have to work hard ";
+		}
+		else if (Grade =>33 )
+		{
+			result.innerHTML = "You are Fail in Examination";
+		}
+
+		else  
+		{
+			result.innerHTML = "Invaid Number";
+		}
+    }
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
